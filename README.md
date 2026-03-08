@@ -1,4 +1,4 @@
-# Talk Delivery – A Speech Support App for Online Meetings –
+# Talk Delivery – Online Meeting Speech Support Application for DHH(deaf and hard-of-hearing) –
 
 ![Talk Delivery Logo](images/Talk%20Takkyubun.png)
 
