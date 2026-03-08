@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const toggle = document.getElementById("readToggle");
     const label = document.getElementById("toggleLabel");
@@ -60,6 +59,7 @@ function speak(text){
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = "en-US";
     utterance.rate = 1.0;
+
     const charTime = 90;
 
     spans.forEach((span, i) => {
@@ -114,10 +114,10 @@ document.addEventListener('DOMContentLoaded', function(){
                 });
 
                 audio.play().catch(function(e){
-                    console.log('音声再生に失敗しました。', e);
+                    console.log('Failed to play audio.', e);
                     resetCallButton();
                 });
-            } else if(mode === 'BlinkMode'){ // 点滅モード
+            } else if(mode === 'BlinkMode'){
                 document.body.classList.add('blink-background');
 
                 setTimeout(() => {
@@ -133,10 +133,9 @@ document.addEventListener('DOMContentLoaded', function(){
             playButton.disabled = false;
         }
     } else {
-        console.error("ボタンがDOMに存在しません。");
+        console.error("The button does not exist in the DOM.");
     }
 });
-
 
 window.addEventListener('load', function(){
     let stream = null;

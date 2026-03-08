@@ -40,8 +40,8 @@ The calling method differs depending on the selected mode.
 Notification Sound Mode:
 A knocking sound (“knock knock”) is sent.
 
-“Is Now a Good Time?” Mode:
-The text “Is now a good time?” is sent.
+“Excuse me” Mode:
+The text “Excuse me” is sent.
 
 ---
 
