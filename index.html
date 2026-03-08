@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Talk Delivery -Online Meeting Speech Support Application-</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="icon" href="images/Talk Takkyubun.png">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header_container">
+                <img src="images/Talk Takkyubun.png" class="header_image">
+                <h1 class="header_container">Talk Delivery -Online Meeting Speech Support Application-</h1>
+            </div>
+        </header>
+    <div class="main">
+            <div class="main-container">
+                <div class="left">
+                    <label class="switchLabel">
+                        <input type="checkbox" id="readToggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span id="toggleLabel">Speech-to-Voice Output: OFF</span>
+                    <div class="Contribution">
+                        <textarea id="Chat" name="Chatinput" placeholder="Enter text here, press Enter twice to delete"></textarea>
+                    </div>
+                </div>
+        
+                <div class="right">
+                    <div class="Camera">
+                        <video id="video" playsinline></video>
+                    </div>        
+                    <label id="CallingTitle">Call Mode Settings</label>
+                    <select id="CallingType">
+                        <option value="ModeDisplay">Notification Sound Mode</option>
+                        <option value="TextDisplay">"Excuse me" Mode</option>
+                    <div id="ControlContainer">
+                        <button id="Calling">Call</button>
+                    </div>
+                </div>
+            </div>
+             <div class="container">
+                <div class="log-section" id="logArea"></div>
+            </div>
+    </div>
+
+        <script src="main.js"></script>
+        <script src="scale-manager.js"></script>
+    </body>
+</html>
